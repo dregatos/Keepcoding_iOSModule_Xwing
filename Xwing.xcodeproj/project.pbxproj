@@ -12,6 +12,11 @@
 		07841B911AD3332A002852E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07841B901AD3332A002852E5 /* Images.xcassets */; };
 		07841B941AD3332A002852E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07841B921AD3332A002852E5 /* LaunchScreen.xib */; };
 		07841BA01AD3332A002852E5 /* XwingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07841B9F1AD3332A002852E5 /* XwingTests.m */; };
+		07841BAC1AD3334D002852E5 /* DRGMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 07841BAA1AD3334D002852E5 /* DRGMainVC.m */; };
+		07841BAD1AD3334D002852E5 /* DRGMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07841BAB1AD3334D002852E5 /* DRGMainVC.xib */; };
+		07841BBA1AD33697002852E5 /* space.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07841BB81AD33697002852E5 /* space.jpg */; };
+		07841BBB1AD33697002852E5 /* xwing.png in Resources */ = {isa = PBXBuildFile; fileRef = 07841BB91AD33697002852E5 /* xwing.png */; };
+		079F1D431AD986700086EFC6 /* DRGXwingAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F1D421AD986700086EFC6 /* DRGXwingAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,14 @@
 		07841B991AD3332A002852E5 /* XwingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XwingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07841B9E1AD3332A002852E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07841B9F1AD3332A002852E5 /* XwingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XwingTests.m; sourceTree = "<group>"; };
+		07841BA91AD3334D002852E5 /* DRGMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRGMainVC.h; path = Controllers/DRGMainVC.h; sourceTree = "<group>"; };
+		07841BAA1AD3334D002852E5 /* DRGMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRGMainVC.m; path = Controllers/DRGMainVC.m; sourceTree = "<group>"; };
+		07841BAB1AD3334D002852E5 /* DRGMainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DRGMainVC.xib; path = Controllers/DRGMainVC.xib; sourceTree = "<group>"; };
+		07841BB81AD33697002852E5 /* space.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = space.jpg; sourceTree = "<group>"; };
+		07841BB91AD33697002852E5 /* xwing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xwing.png; sourceTree = "<group>"; };
+		079F1D411AD986700086EFC6 /* DRGXwingAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRGXwingAnimator.h; path = Helpers/DRGXwingAnimator.h; sourceTree = "<group>"; };
+		079F1D421AD986700086EFC6 /* DRGXwingAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRGXwingAnimator.m; path = Helpers/DRGXwingAnimator.m; sourceTree = "<group>"; };
+		079F1D441AD98CAA0086EFC6 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +89,14 @@
 		07841B881AD3332A002852E5 /* Xwing */ = {
 			isa = PBXGroup;
 			children = (
+				079F1D441AD98CAA0086EFC6 /* Utils.h */,
 				07841B8D1AD3332A002852E5 /* AppDelegate.h */,
 				07841B8E1AD3332A002852E5 /* AppDelegate.m */,
 				07841B901AD3332A002852E5 /* Images.xcassets */,
 				07841B921AD3332A002852E5 /* LaunchScreen.xib */,
+				079F1D401AD986270086EFC6 /* Helpers */,
+				07841BAE1AD33353002852E5 /* Controllers */,
+				07841BB71AD3349A002852E5 /* Resources */,
 				07841B891AD3332A002852E5 /* Supporting Files */,
 			);
 			path = Xwing;
@@ -109,6 +126,34 @@
 				07841B9E1AD3332A002852E5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07841BAE1AD33353002852E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				07841BA91AD3334D002852E5 /* DRGMainVC.h */,
+				07841BAA1AD3334D002852E5 /* DRGMainVC.m */,
+				07841BAB1AD3334D002852E5 /* DRGMainVC.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		07841BB71AD3349A002852E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				07841BB81AD33697002852E5 /* space.jpg */,
+				07841BB91AD33697002852E5 /* xwing.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		079F1D401AD986270086EFC6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				079F1D411AD986700086EFC6 /* DRGXwingAnimator.h */,
+				079F1D421AD986700086EFC6 /* DRGXwingAnimator.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +236,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07841BBA1AD33697002852E5 /* space.jpg in Resources */,
 				07841B941AD3332A002852E5 /* LaunchScreen.xib in Resources */,
+				07841BBB1AD33697002852E5 /* xwing.png in Resources */,
+				07841BAD1AD3334D002852E5 /* DRGMainVC.xib in Resources */,
 				07841B911AD3332A002852E5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +259,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				07841B8F1AD3332A002852E5 /* AppDelegate.m in Sources */,
+				07841BAC1AD3334D002852E5 /* DRGMainVC.m in Sources */,
+				079F1D431AD986700086EFC6 /* DRGXwingAnimator.m in Sources */,
 				07841B8C1AD3332A002852E5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +444,7 @@
 				07841BA51AD3332A002852E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07841BA61AD3332A002852E5 /* Build configuration list for PBXNativeTarget "XwingTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +453,7 @@
 				07841BA81AD3332A002852E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

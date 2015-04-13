@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DRGMainVC.h"
 
 @interface AppDelegate ()
 
@@ -16,10 +17,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    // Create main VC
+    DRGMainVC *mainVC = [[DRGMainVC alloc] init];
+    
+    // Show main VC
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = mainVC;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
